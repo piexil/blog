@@ -1,4 +1,5 @@
 #!/bin/sh
+hugo
 git add --all
 git commit -am "autoupdate"
 git push origin master
