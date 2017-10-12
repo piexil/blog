@@ -88,8 +88,7 @@ copyright = "robert.ross"            # default: author.name ↓        # 默认�
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://localhost:1313"
+    a-email = "rxr8779@g.rit.edu"
     e-linkedin = "http://localhost:1313"
     g-github = "http://localhost:1313"
 
