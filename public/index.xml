@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
+    <link>http://blog.robertross.me/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Oct 2017 17:19:30 -0700</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.robertross.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Making a Static Blog with Hugo</title>
-      <link>http://example.org/post/first/</link>
+      <link>http://blog.robertross.me/post/first/</link>
       <pubDate>Thu, 19 Oct 2017 17:19:30 -0700</pubDate>
       
-      <guid>http://example.org/post/first/</guid>
+      <guid>http://blog.robertross.me/post/first/</guid>
       <description>So recently I have had the desire to create a blog so that I can share work on projects with my friends, family, and potential employers. I wanted something simple. Just the posts and eventually things like images. Wordpress and Gost were both a pain to setup, and required things that could potentially be a secuirty hole. If I&amp;rsquo;m going to be the only person writing posts, why bother with a whole dynamic applicaton?</description>
     </item>
     
