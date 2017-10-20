@@ -1,0 +1,28 @@
+{{ partial "header.html" }}
+
+<body>
+    {{ partial "navbar.html" }}
+    <div class="card card-nav-tabs" style="width:80%;margin-left:10%;">
+            <div class="header header-success">
+                    <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                          <ul class="nav nav-tabs" data-tabs="tabs">  
+                        <li class= "pull-left">
+                              <h4>Archives</h4>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="content">
+        {{ range .Site.RegularPages }}
+        <h4>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <small class="pull-right">{{ .Date.Format "Monday - Jan 2, 2006" }}</small>
+        </h4>
+        {{ end }}
+        </div>
+    </div>
+</body>
+{{ partial "footer.html" }}

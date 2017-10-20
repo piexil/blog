@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Oct 2017 09:56:11 -0700</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3</title>
+      <link>http://example.org/post/3/</link>
+      <pubDate>Fri, 20 Oct 2017 09:56:11 -0700</pubDate>
+      
+      <guid>http://example.org/post/3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2</title>
+      <link>http://example.org/post/2/</link>
+      <pubDate>Fri, 20 Oct 2017 09:56:07 -0700</pubDate>
+      
+      <guid>http://example.org/post/2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Page Blog</title>
+      <link>http://example.org/post/first/</link>
+      <pubDate>Thu, 19 Oct 2017 17:19:30 -0700</pubDate>
+      
+      <guid>http://example.org/post/first/</guid>
+      <description>Static pages are awesome for a small personal blog. Much better than a dynamic web application such as wordpress or the new node.js one gost. Why? Because of secuirty. Most small personal sites my not stay update as often as a professionally run site and that open the door to exploits. Static pages are awesome for a small personal blog. Much better than a dynamic web application such as wordpress or the new node.</description>
+    </item>
+    
+  </channel>
+</rss>

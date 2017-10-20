@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+{{ partial "header.html" }}
+
+<body>
+ {{ partial "navbar.html" }}
+  <div class="row">
+  {{ range first 10 .Data.Pages }}
+  <div class="col-md-5" style="margin-left:5%;">
+  <div class="card card-nav-tabs">
+      <div class="header header-success">
+        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+        <div class="nav-tabs-navigation">
+          <div class="nav-tabs-wrapper">
+              <ul class="nav nav-tabs" data-tabs="tabs">  
+            <li class= "pull-left">
+                  <a href="{{ .Permalink }}">
+                    <i class="material-icons">description</i>
+                    {{ .Title }}
+                  </a>
+                </li>
+            
+              <li class="pull-right">
+                <a>
+                  <i class="material-icons"></i>
+                  {{ .Date.Format "Monday - Jan 2, 2006" }}
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        </div>
+      
+      <div class="content">
+          <div class="tab-content text-center">
+            <div class="tab-" id="profile">
+                <h3>{{ .Title }} <br style="line-height: 50%;"><small>{{ .Params.desc }}</small></h3><br>
+                
+                <p>{{ .Summary }}  <b><a href="{{ .Permalink }}">Read More</a></b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  {{ end }}
+</div>
+</body>
+{{ partial "footer.html" }}
