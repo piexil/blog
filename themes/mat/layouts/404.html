@@ -1,0 +1,30 @@
+{{ partial "header.html" }}
+<body>
+  {{ partial "navbar.html" }}
+  <div class = "main card card-nav-tabs" style="width:80%;margin-left:10%;">
+      <div class="header header-danger">
+          <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+          <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <ul class="nav nav-tabs" data-tabs="tabs">  
+                  <li class="pull-left" style="margin-right:1%;">
+                    <a href="/">
+                      <i class="material-icons">arrow_back</i>
+                    </a>
+                  </li>
+                  <li>
+                    <h4>You're a Little Lost: <small style="color:white;">Aren't You?</small></h4>
+                    </li>
+                    <li class="pull-right">
+                        <h4>{{ .Date.Format "Monday - Jan 2, 2006" }}</h4>
+                    </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="content" style="text-align: center;">
+            <p>Don't worry, I won't tell anyone</p>
+            </div>
+  </div>
+</body>
+{{ partial "footer.html" }}
