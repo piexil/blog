@@ -12,7 +12,7 @@
 
       <div class="card card-nav-tabs">
 
-        <div class="header  {{ if isset .Params "img" }} header-primary {{else}} header-success {{ end }}">
+        <div class="header  {{ if isset .Params " img " }} header-primary {{else}} header-success {{ end }}">
           <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
           <div class="nav-tabs-navigation">
 
@@ -20,15 +20,15 @@
 
               <ul class="nav nav-tabs" data-tabs="tabs">
                 <li class="pull-left">
-                    
+
                   <a href="{{ .Permalink }}" style="text-align: left;">
-                    
+
                     <i class="material-icons">description</i>
                     {{ .Title }}
                     <div class="ripple-container">
-                      </div>
+                    </div>
                   </a>
-                
+
                 </li>
 
 
@@ -37,7 +37,7 @@
                   <a style="text-align: right;">
                     <i class="material-icons">date_range</i>
                     {{ .Date.Format "Monday - Jan 2, 2006" }}
-                    
+
                   </a>
                 </li>
 
@@ -53,26 +53,53 @@
                 <br style="line-height: 50%;">
                 <small>{{ .Params.desc }}</small>
               </h3>
+              {{ range .Params.categories }}
+              <a href="{{ " /categories/ " | relLangURL }}{{ . | urlize }}">
+                <i class="text-muted material-icons">{{ . }}</i>
+              </a>
+              {{ end }}
+              <br>
               <br> {{ if isset .Params "img" }}
 
 
               <img class="img img-rounded img-raised" src="{{ .Params.imgUrl }}" style="display: block;
-                    margin: 0 auto 0; max-width: 75%; max-height: auto;" />
-              <hr /> {{ end }}
-              <p>{{ .Summary }} </p>
+                    margin: 0 auto 0; max-width: 75%; max-height: auto;" /> {{ end }}
+              <hr />
+              <div style="text-align: left;">{{ .Summary }} </div>
+              <br />
+              {{ range .Params.tags }}
+              <a href="{{ " /tags/ " | relLangURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+              {{ end }}
+              <hr />
+
               <a style="text-align:center;" class="btn btn-round btn-info" href="{{ .Permalink }}">
                 Read More</a>
-                <hr />
-              {{ range .Params.tags }}
-                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
-                {{ end }}
             </div>
           </div>
+
         </div>
       </div>
     </div>
 
     {{ end }}
+
+  </div>
+  <div class="row text-center" style="padding:5%;">
+    <div class="col-md-12">
+      <div class="card card-nav">
+        <div class="content">
+          <div class="tab-content text-center">
+            <ul class="pagination pagination-info">
+              <li>
+                <a href="javascript:void(0);">
+                  < prev</a></li>
+          <li class="active"><a href="javascript:void(0);">1</a></li>
+          <li><a href="javascript:void(0);">next ></a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+    </div>
   </div>
 </body>
 {{ partial "footer.html" }}

@@ -4,6 +4,7 @@ date: 2017-10-19T17:19:30-07:00
 draft: false
 desc: "It's not that bad"
 tags: [Rant, Hugo]
+categories: [description]
 ---
 So recently I have had the desire to create a blog so that I can share work on projects with my friends, family, and potential employers. I wanted something simple. Just the posts and eventually things like images. Wordpress and Gost were both a pain to setup, and required things that could potentially be a secuirty hole. If I'm going to be the only person writing posts, why bother with a whole dynamic applicaton? 
 

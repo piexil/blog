@@ -17,7 +17,9 @@
       <pubDate>Mon, 23 Oct 2017 12:35:28 -0700</pubDate>
       
       <guid>http://blog.robertross.me/post/img/</guid>
-      <description>I have just updated this blog with new features. Including a special &amp;ldquo;Image Post&amp;rdquo; that adds an image to the top of a post, and sets the background (eventually I&amp;rsquo;ll let it have seperate backgrounds). I have also added tags, the ability to show all posts with certain tags, et cetera. There&amp;rsquo;s some new minor changes as well. Including new psot sizes and proper mobile relfowing.</description>
+      <description>&lt;p&gt;&lt;b&gt;Edit:&lt;/b&gt; Since originally posting this, I have edited the blog again. This time adding categories (uses Material.io icons), and the start of pagination.
+ 
+ The old update message is below:&lt;/p&gt;</description>
     </item>
     
   </channel>
