@@ -14,14 +14,14 @@
 
         <div class="header  {{ if isset .Params "img" }} header-primary {{else}} header-success {{ end }}">
           <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-          <div class="nav-tabs-navigation">
+          <div class="nav-tabs-navigation nav-justified">
 
             <div class="nav-tabs-wrapper">
 
               <ul class="nav nav-tabs" data-tabs="tabs">
-                <li class="pull-left">
+                <li class="">
 
-                  <a href="{{ .Permalink }}" style="text-align: left;">
+                  <a href="{{ .Permalink }}" style="text-align:justify">
 
                     <i class="material-icons">description</i>
                     {{ .Title }}
@@ -33,8 +33,8 @@
 
 
 
-                <li class="pull-right">
-                  <a style="text-align: right;">
+                <li class="navbar-right">
+                  <a style="text-align:justify">
                     <i class="material-icons">date_range</i>
                     {{ .Date.Format "Monday - Jan 2, 2006" }}
 
