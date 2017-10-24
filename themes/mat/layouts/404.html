@@ -1,6 +1,6 @@
 {{ partial "header.html" }}
 <body>
-  {{ partial "navbar.html" }}
+  {{ partial "navbar.html" (dict "params" $.Params "site" $.Site ) }}
   <div class = "main card card-nav-tabs" style="width:80%;margin-left:10%;">
       <div class="header header-danger">
           <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
@@ -13,17 +13,18 @@
                     </a>
                   </li>
                   <li>
-                    <h4>You're a Little Lost: <small style="color:white;">Aren't You?</small></h4>
+                    <h4>ERROR: <small style="color:white;">404</small></h4>
                     </li>
                     <li class="pull-right">
-                        <h4>{{ .Date.Format "Monday - Jan 2, 2006" }}</h4>
+                        <h4>Monday: April 4th</h4>
                     </li>
               </ul>
             </div>
           </div>
           </div>
           <div class="content" style="text-align: center;">
-            <p>Don't worry, I won't tell anyone</p>
+            <h4>Someone's Lost.<small>Aren't you?</small></h4>
+            <p>Don't worry, I won't tell anyone</p>s
             </div>
   </div>
 </body>

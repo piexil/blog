@@ -1,8 +1,11 @@
 {{ partial "header.html" }}
-<body>
-  {{ partial "navbar.html" }}
-  <div class = "main card card-nav-tabs" style="width:80%;margin-left:10%;">
-      <div class="header header-success">
+<body class="profile-page">
+  {{ partial "navbar.html" (dict "params" $.Params "site" $.Site ) }}
+  {{ if isset .Params "img" }}
+  <div class="header header-filter" style="background-image: url('{{ .Params.imgUrl }}');background-size : 100% auto"></div>
+  {{ end }}
+  <div class = "main {{ if isset .Params "img" }} {{ end }} card card-nav-tabs" style="{{ if isset .Params "img" }} margin-top:-120px; {{ end }} width:90%;margin-left:5%;">
+      <div class="header {{ if isset .Params "img" }} header-primary {{else}} header-success {{ end }}" style="height:100%;">
           <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
           <div class="nav-tabs-navigation">
             <div class="nav-tabs-wrapper">
@@ -10,10 +13,11 @@
                   <li class="pull-left" style="margin-right:1%;">
                     <a href="/">
                       <i class="material-icons">arrow_back</i>
+                      <div class="ripple-container"></div>
                     </a>
                   </li>
                   <li>
-                    <h4>{{ .Title }}: <small style="color:white;">{{ .Params.desc }}</small></h4>
+                      <h4>{{ .Title }}</h4>
                     </li>
                     <li class="pull-right">
                         <h4>{{ .Date.Format "Monday - Jan 2, 2006" }}</h4>
@@ -24,7 +28,14 @@
           </div>
           <div class="content" style="text-align: center;">
             <h2>{{ .Title }}<br> <small>{{ .Params.desc }}</small></h2>
+            {{ if isset .Params "img" }}
+              <img class="img-rounded img-raised img-responsive" style="margin: 0 auto;" src="{{ .Params.imgUrl }}" />
+              <hr />
+            {{ end }}
             <p>{{ .Content }}</p>
+            {{ range .Params.tags }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+            {{ end }}
             </div>
   </div>
 </body>

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2017 17:19:30 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 23 Oct 2017 12:35:28 -0700</lastBuildDate>
     
 	<atom:link href="http://blog.robertross.me/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog Updates</title>
+      <link>http://blog.robertross.me/post/img/</link>
+      <pubDate>Mon, 23 Oct 2017 12:35:28 -0700</pubDate>
+      
+      <guid>http://blog.robertross.me/post/img/</guid>
+      <description>I have just updated this blog with new features. Including a special &amp;ldquo;Image Post&amp;rdquo; that adds an image to the top of a post, and sets the background (eventually I&amp;rsquo;ll let it have seperate backgrounds). I have also added tags, the ability to show all posts with certain tags, et cetera. There&amp;rsquo;s some new minor changes as well. Including new psot sizes and proper mobile relfowing.</description>
+    </item>
     
     <item>
       <title>Making a Static Blog with Hugo</title>

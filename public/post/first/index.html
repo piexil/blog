@@ -29,9 +29,9 @@
           }
         </style>
       </head>
-<body>
-   <nav class="navbar navbar-danger" role="navigation">
-    <div class="container-fluid">
+<body class="profile-page">
+   <nav class="navbar   navbar-danger " role="navigation">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -39,13 +39,40 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://robertross.me">Robert Ross</a>
+        
+        
+        <a class="navbar-brand icon" href="/"> Robert Ross</a>
+      
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
+            <a href="robertross.me">
+              Personal Site
+            </a>
+          </li>
+          <li>
             <a href="/">Recent Posts</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Tags
+            
+            <b class="caret"></b>
+            <div class="ripple-container"></div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              
+              <li><a href="/tags/blog-update">blog-update</a></li>
+            
+              <li><a href="/tags/hugo">hugo</a></li>
+            
+              <li><a href="/tags/image">image</a></li>
+            
+              <li><a href="/tags/rant">rant</a></li>
+            
+            </ul>
           </li>
           <li>
               <a href="/post">Archives</a>
@@ -54,8 +81,9 @@
       </div>
     </div>
   </nav>
-  <div class = "main card card-nav-tabs" style="width:80%;margin-left:10%;">
-      <div class="header header-success">
+  
+  <div class = "main  card card-nav-tabs" style=" width:90%;margin-left:5%;">
+      <div class="header  header-success " style="height:100%;">
           
           <div class="nav-tabs-navigation">
             <div class="nav-tabs-wrapper">
@@ -63,10 +91,11 @@
                   <li class="pull-left" style="margin-right:1%;">
                     <a href="/">
                       <i class="material-icons">arrow_back</i>
+                      <div class="ripple-container"></div>
                     </a>
                   </li>
                   <li>
-                    <h4>Making a Static Blog with Hugo: <small style="color:white;">It&#39;s not that bad</small></h4>
+                      <h4>Making a Static Blog with Hugo</h4>
                     </li>
                     <li class="pull-right">
                         <h4>Thursday - Oct 19, 2017</h4>
@@ -77,19 +106,25 @@
           </div>
           <div class="content" style="text-align: center;">
             <h2>Making a Static Blog with Hugo<br> <small>It&#39;s not that bad</small></h2>
+            
             <p><p>So recently I have had the desire to create a blog so that I can share work on projects with my friends, family, and potential employers. I wanted something simple. Just the posts and eventually things like images. Wordpress and Gost were both a pain to setup, and required things that could potentially be a secuirty hole. If I&rsquo;m going to be the only person writing posts, why bother with a whole dynamic applicaton?</p>
 
 <p>I came across a static web page compiler called hugo and this completley solved my issue with blogging software being too bloated for the small time blogger. I can control exactly how much I want. I also have completle control over how it looks. I didn&rsquo;t really like any of the theme options avalible at the hugo page, so I rolled my own based off of my personal website.</p>
 
 <p>You can view the source to all of this here, at my <a href="https://github.com/piexil/blog">github</a>, the reason I use github as I actually use that as a way to sync the local dev copy of this site to the vps it&rsquo;s run off of. That allows me to write posts from anywhere I have SSH, Git, and a text editor.</p>
 </p>
+            
+            <a href="/tags/rant" class="label label-default">Rant</a>
+            
+            <a href="/tags/hugo" class="label label-default">Hugo</a>
+            
             </div>
   </div>
 </body>
 
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/js/material.min.js"></script>
+<script src="/assets/js/material.min.js"></script>
 
 
 <script src="/assets/js/nouislider.min.js" type="text/javascript"></script>

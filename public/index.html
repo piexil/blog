@@ -36,8 +36,8 @@
       </head>
 
 <body>
-  <nav class="navbar navbar-danger" role="navigation">
-    <div class="container-fluid">
+   <nav class="navbar   navbar-danger " role="navigation">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -45,13 +45,40 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://robertross.me">Robert Ross</a>
+        
+        
+        <a class="navbar-brand icon" href="/"> Robert Ross</a>
+      
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
+            <a href="robertross.me">
+              Personal Site
+            </a>
+          </li>
+          <li>
             <a href="/">Recent Posts</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Tags
+            
+            <b class="caret"></b>
+            <div class="ripple-container"></div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              
+              <li><a href="/tags/blog-update">blog-update</a></li>
+            
+              <li><a href="/tags/hugo">hugo</a></li>
+            
+              <li><a href="/tags/image">image</a></li>
+            
+              <li><a href="/tags/rant">rant</a></li>
+            
+            </ul>
           </li>
           <li>
               <a href="/post">Archives</a>
@@ -60,53 +87,145 @@
       </div>
     </div>
   </nav>
-  <div class="row">
-  
-  <div class="col-md-5" style="margin-left:2%;">
-  <div class="card card-nav-tabs">
-      <div class="header header-success">
-        
-        <div class="nav-tabs-navigation">
-          <div class="nav-tabs-wrapper">
-              <ul class="nav nav-tabs" data-tabs="tabs">  
-            <li class= "pull-left">
-                  <a href="http://blog.robertross.me/post/first/">
+  <div class="row" style="margin: 0px;">
+    
+    <div class="col-md-6">
+
+      <div class="card card-nav-tabs">
+
+        <div class="header   header-primary ">
+          
+          <div class="nav-tabs-navigation">
+
+            <div class="nav-tabs-wrapper">
+
+              <ul class="nav nav-tabs" data-tabs="tabs">
+                <li class="pull-left">
+                    
+                  <a href="http://blog.robertross.me/post/img/" style="text-align: left;">
+                    
                     <i class="material-icons">description</i>
-                    Making a Static Blog with Hugo
+                    Blog Updates
+                    <div class="ripple-container">
+                      </div>
+                  </a>
+                
+                </li>
+
+
+
+                <li class="pull-right">
+                  <a style="text-align: right;">
+                    <i class="material-icons">date_range</i>
+                    Monday - Oct 23, 2017
+                    
                   </a>
                 </li>
-            
-              <li class="pull-right">
-                <a>
-                  <i class="material-icons"></i>
-                  Thursday - Oct 19, 2017
-                </a>
-              </li>
-              
-            </ul>
+
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-      
-      <div class="content">
+
+        <div class="content">
           <div class="tab-content text-center">
             <div class="tab-" id="profile">
-                <h3>Making a Static Blog with Hugo <br style="line-height: 50%;"><small>It&#39;s not that bad</small></h3><br>
+              <h3>Blog Updates
+                <br style="line-height: 50%;">
+                <small>Images, Tags, and More!</small>
+              </h3>
+              <br> 
+
+
+              <img class="img img-rounded img-raised" src="/assets/img/post/update1024.png" style="display: block;
+                    margin: 0 auto 0; max-width: 75%; max-height: auto;" />
+              <hr /> 
+              <p>I have just updated this blog with new features. Including a special &ldquo;Image Post&rdquo; that adds an image to the top of a post, and sets the background (eventually I&rsquo;ll let it have seperate backgrounds). I have also added tags, the ability to show all posts with certain tags, et cetera. There&rsquo;s some new minor changes as well. Including new psot sizes and proper mobile relfowing. </p>
+              <a style="text-align:center;" class="btn btn-round btn-info" href="http://blog.robertross.me/post/img/">
+                Read More</a>
+                <hr />
+              
+                <a href="/tags/image" class="label label-default">Image</a>
                 
-                <p>So recently I have had the desire to create a blog so that I can share work on projects with my friends, family, and potential employers. I wanted something simple. Just the posts and eventually things like images. Wordpress and Gost were both a pain to setup, and required things that could potentially be a secuirty hole. If I&rsquo;m going to be the only person writing posts, why bother with a whole dynamic applicaton?  <b><a href="http://blog.robertross.me/post/first/">Read More</a></b></p>
+                <a href="/tags/blog-update" class="label label-default">Blog Update</a>
+                
+                <a href="/tags/hugo" class="label label-default">Hugo</a>
+                
             </div>
           </div>
         </div>
       </div>
     </div>
-  
-  
-</div>
+
+    
+    <div class="col-md-6">
+
+      <div class="card card-nav-tabs">
+
+        <div class="header   header-success ">
+          
+          <div class="nav-tabs-navigation">
+
+            <div class="nav-tabs-wrapper">
+
+              <ul class="nav nav-tabs" data-tabs="tabs">
+                <li class="pull-left">
+                    
+                  <a href="http://blog.robertross.me/post/first/" style="text-align: left;">
+                    
+                    <i class="material-icons">description</i>
+                    Making a Static Blog with Hugo
+                    <div class="ripple-container">
+                      </div>
+                  </a>
+                
+                </li>
+
+
+
+                <li class="pull-right">
+                  <a style="text-align: right;">
+                    <i class="material-icons">date_range</i>
+                    Thursday - Oct 19, 2017
+                    
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="tab-content text-center">
+            <div class="tab-" id="profile">
+              <h3>Making a Static Blog with Hugo
+                <br style="line-height: 50%;">
+                <small>It&#39;s not that bad</small>
+              </h3>
+              <br> 
+              <p>So recently I have had the desire to create a blog so that I can share work on projects with my friends, family, and potential employers. I wanted something simple. Just the posts and eventually things like images. Wordpress and Gost were both a pain to setup, and required things that could potentially be a secuirty hole. If I&rsquo;m going to be the only person writing posts, why bother with a whole dynamic applicaton? </p>
+              <a style="text-align:center;" class="btn btn-round btn-info" href="http://blog.robertross.me/post/first/">
+                Read More</a>
+                <hr />
+              
+                <a href="/tags/rant" class="label label-default">Rant</a>
+                
+                <a href="/tags/hugo" class="label label-default">Hugo</a>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
 </body>
 
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/js/material.min.js"></script>
+<script src="/assets/js/material.min.js"></script>
 
 
 <script src="/assets/js/nouislider.min.js" type="text/javascript"></script>
